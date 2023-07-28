@@ -1,88 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
-    <title>计算器</title>
-    <style>
-        .calculator {
-            width: 200px;
-            background-color: #eee;
-            padding: 10px;
-        }
-        .result {
-            margin-bottom: 10px;
-        }
-        .button {
-            width: 40px;
-            height: 40px;
-            margin: 2px;
-            background-color: #ccc;
-            display: inline-block;
-            text-align: center;
-            line-height: 40px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #bbb;
-        }
-    </style>
+    <meta charset="utf-8"/>
+    <title>cailh的网站</title>
 </head>
 <body>
-    <div class="calculator">
-        <div class="result">
-            <input type="text" id="result" readonly>
-        </div>
-        <div>
-            <div class="button" onclick="appendNumber(7)">7</div>
-            <div class="button" onclick="appendNumber(8)">8</div>
-            <div class="button" onclick="appendNumber(9)">9</div>
-            <div class="button" onclick="appendOperator('+')">+</div>
-        </div>
-        <div>
-            <div class="button" onclick="appendNumber(4)">4</div>
-            <div class="button" onclick="appendNumber(5)">5</div>
-            <div class="button" onclick="appendNumber(6)">6</div>
-            <div class="button" onclick="appendOperator('-')">-</div>
-        </div>
-        <div>
-            <div class="button" onclick="appendNumber(1)">1</div>
-            <div class="button" onclick="appendNumber(2)">2</div>
-            <div class="button" onclick="appendNumber(3)">3</div>
-            <div class="button" onclick="appendOperator('*')">*</div>
-        </div>
-        <div>
-            <div class="button" onclick="appendNumber(0)">0</div>
-            <div class="button" onclick="clearInput()">C</div>
-            <div class="button" onclick="calculate()">=</div>
-            <div class="button" onclick="appendOperator('/')">/</div>
-        </div>
-    </div>
-    <script>
-        let input = '';
-
-        function appendNumber(num) {
-            input += num;
-            document.getElementById('result').value = input;
-        }
-
-        function appendOperator(operator) {
-            input += operator;
-            document.getElementById('result').value = input;
-        }
-
-        function clearInput() {
-            input = '';
-            document.getElementById('result').value = input;
-        }
-
-        function calculate() {
-            try {
-                let result = eval(input);
-                document.getElementById('result').value = result;
-                input = '';
-            } catch (error) {
-                document.getElementById('result').value = 'Error';
-            }
-        }
-    </script>
+    <h1>cailh的网站</h1>
+    <h3>首页</h3>
+    <p>这是我的网站，现在还没什么。</p>
 </body>
 </html>
