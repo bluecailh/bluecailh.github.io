@@ -1,13 +1,58 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>cailh的网站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cailh的主页</title>
+    <style>
+        
+        body {
+            background-color: #8aceff;
+        }
+        .navbar {
+            background-color: #FFFFFF;
+            overflow: hidden;
+            border-radius:8px;
+            box-shadow:2px 2px 2px grey;
+            margin-top: 20px;
+        }
+        .word {
+            background-color: #FFFFFF;
+            overflow: hidden;
+            border-radius:8px;
+            box-shadow:2px 2px 2px grey; 
+            margin-top: 30px;
+        }
+        
+        .navbar a {
+            float: left;
+            color: #89ceff;
+            text-align: center;
+            padding: 14px 50px;
+            text-decoration: none;
+        }
+
+        
+        .navbar a:hover { 
+            background-color: #ddd;
+            color: black;
+        }
+
+        .word {
+            padding: 20px; /* 调整图片与盒子边框的距离 */
+        }
+        
+    </style>
 </head>
 <body>
-    <img src="logo.png">
-    <h1>cailh的网站</h1>
-    <h3>首页</h3>
-    <p>这是我的网站，现在还没什么。</p>
+    <div class="navbar">
+        <a href="#home">首页</a>
+        <a href="#about">关于我</a>
+        <a href="#portfolio">作品集</a>
+    </div>
+    <div class="word">
+        <img src="logo.png">
+	<p>这是我的网站，现在还没什么</p>
+    </div>
 </body>
 </html>
